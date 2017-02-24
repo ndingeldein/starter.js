@@ -1,0 +1,36 @@
+{
+  "name": "dev.js",
+  "dependencies": {
+    "jasmine": "^2.5.3",
+    "jump.js": "^1.0.2"
+  },
+  "ava": {
+    "source": [
+      "src/**/*.{js,jsx}",
+      "!dist/**/*"
+    ],
+    "failFast": true,
+    "tap": false,
+    "powerAssert": true,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-preset-latest": "^6.22.0",
+    "laravel-mix": "^0.8.7",
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch",
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "author": "Neil Dingeldein <ndingeldein@gmail.com> (http://www.neildingeldein.com)",
+  "license": "MIT"
+}
