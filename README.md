@@ -1,9 +1,10 @@
 # Project Name Here
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
+## Description
 Add really succinct description here.
 
-### Install
-
+## Install
 Directions how to install
 
 ```bash
