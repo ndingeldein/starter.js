@@ -1,9 +1,5 @@
 {
   "name": "dev.js",
-  "dependencies": {
-    "jasmine": "^2.5.3",
-    "jump.js": "^1.0.2"
-  },
   "ava": {
     "source": [
       "src/**/*.{js,jsx}",
